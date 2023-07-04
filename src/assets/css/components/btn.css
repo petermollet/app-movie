@@ -1,0 +1,7 @@
+.link {
+    @apply text-slate-300 hover:text-slate-100;
+}
+
+.active {
+    @apply text-green-600 hover:text-green-600 hover:cursor-default;
+}
