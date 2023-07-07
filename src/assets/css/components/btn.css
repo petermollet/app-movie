@@ -3,5 +3,5 @@
 }
 
 .active {
-    @apply text-green-600 hover:text-green-600 hover:cursor-default;
+    @apply text-green-400 hover:text-green-400 hover:cursor-default;
 }

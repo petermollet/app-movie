@@ -2,10 +2,13 @@
 
 @layer base {
     html {
-        @apply overflow-hidden;
+        @apply min-h-screen no-scrollbar cursor-default;
     }
     body {
-        @apply bg-slate-800 text-slate-300 text-sm md:text-base;
+        @apply bg-slate-800 text-slate-300 text-sm md:text-base min-h-screen;
+    }
+    #root {
+        @apply min-h-screen flex flex-col;
     }
 
     /* TYPOGRAPHIE */

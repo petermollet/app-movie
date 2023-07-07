@@ -1,8 +1,13 @@
+import {PageLayout} from "../components/layout/PageLayout.jsx";
+import {useSelector} from "react-redux";
+import {MovieList} from "../components/movies/MovieList.jsx";
+
 const FavView = () => {
+	const favorites = useSelector((state) => state.movies.favorites);
 	return (
-		<div>
-			<h1>FavViews</h1>
-		</div>
+		<PageLayout>
+			<MovieList movies={favorites}/>
+		</PageLayout>
 	)
 }
 
